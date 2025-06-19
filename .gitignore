@@ -1,0 +1,9 @@
+build/
+.dart_tool/
+.packages
+pubspec.lock
+firebase.json
+android/key.properties
+*.iml
+.idea/
+.vscode/
