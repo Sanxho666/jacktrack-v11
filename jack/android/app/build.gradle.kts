@@ -1,3 +1,6 @@
+
+
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -5,19 +8,31 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+
+
+
 android {
-    namespace = "com.example.jack"
+    namespace = "com.jacktrack"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+
+
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+
+
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
+
+
+
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
@@ -30,6 +45,9 @@ android {
         versionName = flutter.versionName
     }
 
+
+
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -39,6 +57,35 @@ android {
     }
 }
 
+
+
+
 flutter {
     source = "../.."
 }
+
+
+            signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+}
+
+
+
+
+flutter {
+    source = "../.."
+}
+
+
+
+            signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+}
+
+
+flutter {
+    source = "../.."
+}
+
